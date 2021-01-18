@@ -8,13 +8,13 @@ class Stanza {
     public $tipo;
     public $piano;
 
-    function __construct($tipo, $prezzo, $piano) {
+    public function __construct($tipo, $prezzo, $piano) {
         $this->tipo = $tipo;
         $this->prezzo = $prezzo;
         $this->piano = $piano;
     }
 
-    function print_room() {
+    public function print_room() {
         echo 'Prezzo: ' . $this->prezzo . '€' . ' Tipo Camera: ' . $this->tipo . ' Piano: ' . $this->piano;
     }
 
